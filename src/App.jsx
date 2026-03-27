@@ -12,10 +12,11 @@ function App() {
     <div className="text-white font-sans">
 
       {/* HERO */}
-      <section className="h-screen relative">
+      <section className="min-h-screen relative">
 
         <img
           src={bg}
+          alt="bg"
           className="absolute w-full h-full object-cover"
         />
 
@@ -23,81 +24,89 @@ function App() {
 
           <img
             src={profile}
-            className="w-40 h-40 rounded-full border-4 border-cyan-400 object-cover shadow-lg"
+            alt="profile"
+            className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full border-4 border-cyan-400 object-cover shadow-lg"
           />
 
-  <h1 className="text-5xl md:text-6xl font-bold mt-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text water-text">
-  Konda Sridhar
-</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-6 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
+            Konda Sridhar
+          </h1>
 
-          <p className="mt-4 text-lg text-gray-300">
+          <p className="mt-4 text-sm sm:text-lg text-gray-300">
             Full Stack Developer | QA Tester | Problem Solver
           </p>
 
-          <div className="mt-6 space-x-4">
-         <a
-  href="/KONDA _SRIDHAR_RESUME_1.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-3 border border-cyan-400 rounded-lg text-white hover:bg-cyan-400 hover:text-black transition"
->
-  View Resume
-</a>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+
+            <a
+              href="/KONDA _SRIDHAR_RESUME_1.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 sm:px-6 sm:py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
+            >
+              View Resume
+            </a>
 
             <a
               href="https://github.com/sridhar56556"
               target="_blank"
-              className="px-6 py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black"
+              rel="noopener noreferrer"
+              className="px-4 py-2 sm:px-6 sm:py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
             >
               GitHub
             </a>
-            <a
-  href="https://linkedin.com/in/kondasridhar"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="px-6 py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black"
->
-  LinkedIn
-</a>
-<a
-  href="mailto:sridharkonda553@gmail.com"
-  className="px-6 py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
->
-  Email
-</a>
-          </div>
 
+            <a
+              href="https://linkedin.com/in/kondasridhar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 sm:px-6 sm:py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="mailto:sridharkonda553@gmail.com"
+              className="px-4 py-2 sm:px-6 sm:py-3 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
+            >
+              Email
+            </a>
+
+          </div>
         </div>
       </section>
 
       {/* ABOUT */}
-      <section className="bg-gray-900 py-20 px-6 text-center">
+      <section className="bg-gray-900 py-16 px-6 text-center">
 
-        <h2 className="text-4xl font-bold text-yellow-400">About Me</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+          About Me
+        </h2>
 
-        <p className="mt-6 max-w-3xl mx-auto text-gray-300 leading-relaxed">
+        <p className="mt-6 max-w-3xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed">
           Computer Science graduate with hands-on experience in building Java backend systems,
           MySQL databases, and responsive web applications. Skilled in writing test cases,
-          identifying software defects, and validating application behavior across multiple layers.
-          Strong in analytical thinking and problem solving.
+          identifying software defects, and validating application behavior.
         </p>
 
-        <p className="mt-4 text-gray-400">
+        <p className="mt-4 text-gray-400 text-sm">
           🎓 B.Tech CSE — Sree Chaitanya Institute of Technological Sciences (68%)
         </p>
 
       </section>
 
       {/* SKILLS */}
-      <section className="bg-black py-20 px-6 text-center">
+      <section className="bg-black py-16 px-6 text-center">
 
-        <h2 className="text-4xl font-bold text-yellow-400">Technical Skills</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+          Technical Skills
+        </h2>
 
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
           {skills.map((s, i) => (
             <span
               key={i}
-              className="px-5 py-3 bg-gray-800 rounded-lg hover:bg-cyan-500 transition"
+              className="px-3 py-2 sm:px-5 sm:py-3 bg-gray-800 rounded-lg hover:bg-cyan-500 transition text-sm sm:text-base"
             >
               {s}
             </span>
@@ -107,130 +116,98 @@ function App() {
       </section>
 
       {/* PROJECTS */}
-      <section className="bg-gray-900 py-20 px-6 text-center">
+      <section className="bg-gray-900 py-16 px-6 text-center">
 
-        <h2 className="text-4xl font-bold text-yellow-400">Projects</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+          Projects
+        </h2>
 
-        <div className="mt-10 grid md:grid-cols-2 gap-6">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
+          {/* Project 1 */}
           <div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
-            <h3 className="text-xl font-bold">
-             Enabling Secure and Space-Efficient Metadata Management in Encrypted Deduplication
+            <h3 className="text-lg sm:text-xl font-bold">
+              Secure Metadata Management System
             </h3>
-            <p className="mt-3 text-gray-400">
-              Built using Java (J2EE), Servlets, JDBC, and MySQL. 
-              Implemented encrypted deduplication to eliminate redundant storage 
-              and improve efficiency.
+            <p className="mt-3 text-gray-400 text-sm">
+              Java (J2EE), Servlets, JDBC, MySQL with encrypted deduplication.
             </p>
           </div>
 
-      <div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
-  <h3 className="text-xl font-bold">
-    Online Ticket Booking System
-  </h3>
+          {/* Project 2 */}
+          <div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+            <h3 className="text-lg sm:text-xl font-bold">
+              Ticket Booking System
+            </h3>
+            <p className="mt-3 text-gray-400 text-sm">
+              HTML, CSS, JS with booking workflow & dashboard.
+            </p>
 
-  <p className="mt-3 text-gray-400">
-    Developed a responsive web app using HTML, CSS, JavaScript.
-    Includes booking workflow, dashboard, and real-time fare calculation.
-  </p>
+            <a
+              href="https://sridhar56556.github.io/ticket-booking/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-4 text-cyan-400 hover:underline"
+            >
+              🔗 Live Demo
+            </a>
+          </div>
 
-  {/* Live Link */}
-  <a
-    href="https://sridhar56556.github.io/ticket-booking/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block mt-4 text-cyan-400 hover:underline"
-  >
-    🔗 Live Demo
-  </a>
-</div>
-<div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
-  <h3 className="text-xl font-bold">
-    TicTacToe Game (Java Servlet)
-  </h3>
+          {/* Project 3 */}
+          <div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+            <h3 className="text-lg sm:text-xl font-bold">
+              TicTacToe Game
+            </h3>
 
-  <p className="mt-3 text-gray-400">
-    Developed a TicTacToe game using Java Servlets, JSP, and MySQL.
-    Implemented game logic, session handling, and dynamic UI rendering.
-  </p>
+            <a
+              href="https://github.com/sridhar56556/TicTacToe-Game"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block px-4 py-2 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black"
+            >
+              GitHub
+            </a>
+          </div>
 
-  <div className="mt-4 space-x-4">
+          {/* Project 4 */}
+          <div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
+            <h3 className="text-lg sm:text-xl font-bold">
+              Online Banking
+            </h3>
 
-    {/* GitHub */}
-    <a
-      href="https://github.com/sridhar56556/TicTacToe-Game"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="px-4 py-2 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
-    >
-      GitHub
-    </a>
-
-  </div>
-</div>
-<div className="bg-gray-800 p-6 rounded-lg hover:scale-105 transition">
-  <h3 className="text-xl font-bold">
-    Online Banking System
-  </h3>
-
-  <p className="mt-3 text-gray-400">
-    Developed a basic online banking web application using HTML and CSS.
-    Includes UI for account operations like balance view and transactions.
-  </p>
-
-  <div className="mt-4 space-x-4">
-
-    <a
-      href="https://github.com/sridhar56556/Online-Banking"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="px-4 py-2 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black transition"
-    >
-      GitHub
-    </a>
-
-  </div>
-</div>
+            <a
+              href="https://github.com/sridhar56556/Online-Banking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block px-4 py-2 border border-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-black"
+            >
+              GitHub
+            </a>
+          </div>
 
         </div>
 
       </section>
 
       {/* CONTACT */}
-      <section className="bg-black py-20 text-center">
+      <section className="bg-black py-16 text-center">
 
-        <h2 className="text-4xl font-bold text-yellow-400">Contact</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-yellow-400">
+          Contact
+        </h2>
 
-        <p className="mt-6 text-gray-300">
+        <p className="mt-6 text-gray-300 text-sm">
           📧 sridharkonda553@gmail.com
         </p>
 
-        <p className="text-gray-300">
+        <p className="text-gray-300 text-sm">
           📍 Karimnagar, Telangana
         </p>
-
-        <div className="mt-4 space-x-4">
-          <a
-            href="https://github.com/sridhar56556"
-            target="_blank"
-            className="text-cyan-400 hover:underline"
-          >
-            GitHub
-          </a>
-
-          <a
-            href="https://linkedin.com/in/kondasridhar"
-            target="_blank"
-            className="text-cyan-400 hover:underline"
-          >
-            LinkedIn
-          </a>
-        </div>
 
       </section>
 
       {/* FOOTER */}
-      <footer className="text-center py-6 border-t border-gray-700 text-gray-400">
+      <footer className="text-center py-6 border-t border-gray-700 text-gray-400 text-sm">
         © 2026 Konda Sridhar
       </footer>
 
